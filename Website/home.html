@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        	<title>Home</title>
+
+        	<!-- Load external CSS styles -->
+        	<link rel="stylesheet" href="website.css">
+
+        	<!-- Load external JavaScript -->
+        	<script src="scripts.js"></script>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="background" style="height:90%;">
+		<h1> <a href="home.html" style="text-decoration:none; color: inherit;"> Mr. Valoria </a> </h1>
+		<ul class="topnav">
+  			
+  			<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn"> Math Classes </a>
+    				<div class="dropdown-content">
+      					<a href="IM1.html"> IM1 </a>
+      					<a href="IM2.html"> IM2</a>
+    				</div>
+  			</li>
+			<li><a href="about.html">About</a></li>
+			<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn"> Grade Calculator </a>
+    				<div class="dropdown-content">
+      					<a href="gradeCalculatorIM1.html"> IM1 </a>
+      					<a href="gradeCalculatorIM2.html"> IM2</a>
+    				</div>
+  			</li>
+		</ul>
+
+		<h3> Welcome! </h3>
+	</div>
+		<div class="heading" id="classInfo">
+			<h1> Students and Parents </h1>
+		</div>
+		<div class="row" style="border-top: 1px solid black;">
+  			<div class="column">
+    				<h2> Parents </h2>
+    				<p> Blippi, portrayed by Stevin John, is a charismatic and energetic children's entertainer who has captivated young audiences around the world. With his distinctive blue and orange attire, Blippi brings a unique blend of education and entertainment to his videos. Through his enthusiastic persona, Blippi explores various topics, such as colors, numbers, animals, and transportation, all while engaging children with his playful antics and catchy songs. </p>
+  			</div>
+  			<div class="column">
+    				<img src="./Images/GroupGoals.jpg">
+  			</div>
+		</div>
+	
+	<div class="row" style="padding-bottom: 5%;">
+  			<div class="column">
+    				<img src="./Images/GroupGoals.jpg">
+  			</div>
+			<div class="column">
+    				<h2> Students </h2>
+    				<p> Blippi, portrayed by Stevin John, is a charismatic and energetic children's entertainer who has captivated young audiences around the world. With his distinctive blue and orange attire, Blippi brings a unique blend of education and entertainment to his videos. Through his enthusiastic persona, Blippi explores various topics, such as colors, numbers, animals, and transportation, all while engaging children with his playful antics and catchy songs. </p>
+  			</div>
+  			
+	</div>
+
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCjul0eLk7-5YGmecMUDe28LNms0NSl9VU",
+    authDomain: "website-738c0.firebaseapp.com",
+    projectId: "website-738c0",
+    storageBucket: "website-738c0.appspot.com",
+    messagingSenderId: "576778949526",
+    appId: "1:576778949526:web:7ccc524d24936bfc9703b7",
+    measurementId: "G-MZVM0VFVCK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>

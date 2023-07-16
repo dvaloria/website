@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        	<title>Grade Calculator</title>
+
+        	<!-- Load external CSS styles -->
+        	<link rel="stylesheet" href="website.css">
+
+        	<!-- Load external JavaScript -->
+        	<script src="scripts.js"></script>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="background" style="height:90%;">
+		<h1> <a href="home.html" style="text-decoration:none; color: inherit;"> Mr. Valoria </a> </h1>
+		<ul class="topnav">
+  			
+  			<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn"> Math Classes </a>
+    				<div class="dropdown-content">
+      					<a href="IM1.html"> IM1 </a>
+      					<a href="IM2.html"> IM2</a>
+    				</div>
+  			</li>
+			<li><a href="about.html">About</a></li>
+  			<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn"> Grade Calculator </a>
+    				<div class="dropdown-content">
+      					<a href="gradeCalculatorIM1.html"> IM1 </a>
+      					<a href="gradeCalculatorIM2.html"> IM2 </a>
+    				</div>
+  			</li>
+		</ul>
+
+		<h3> Grade Calculator </h3>
+	</div>
+	<div class="heading" id="classInfo">
+		<h1> Integrated Math 2 Grade Calculator </h1>
+	</div>
+	<div class="row" id="IM1GradingCalculator">
+  			<div class="column" style="width:90%;">
+				<p> The following tool is intended to help students and their families easily know what grade they currently have. Please use the mastery tab as described above to input your grade for each concept and check the box if you have a star for that concept. When you have filled out all the fields for either College Prep or Honors, hit the corresponding "Submit" button to calculate your grade. Please email me with any questions you have about grades. </p>
+  			</div>
+  			
+		</div>
+
+		<div class="row" style="padding-top:0;">
+  			<div class="column">
+    				<h2> College Prep Grading Calculator </h2>
+				<br>
+    				<form name="form1">
+					<p> Essential Concept 1 </p>
+					Grade: <input type="number" name="grade0">
+					Star? <input type="checkbox" name="star0">
+					<br>
+					<p> Essential Concept 2 </p>
+					Grade: <input type="number" name="grade1">
+					Star? <input type="checkbox" name="star1"> 
+					<br>
+					<p> Essential Concept 3 </p>
+					Grade: <input type="number" name="grade2">
+					Star? <input type="checkbox" name="star2">
+					<br>
+					<p> Essential Concept 4 </p>
+					Grade: <input type="number" name="grade3">
+					Star? <input type="checkbox" name="star3">
+					<br>
+					<p> Essential Concept 5 </p>
+					Grade: <input type="number" name="grade4">
+					Star? <input type="checkbox" name="star4">
+					<br>
+					<p> Essential Concept 6 </p>
+					Grade: <input type="number" name="grade5">
+					Star? <input type="checkbox" name="star5">
+					<br>
+					<br>
+					<input type="submit" onclick="checkCP2(); return false">
+				</form>
+  			</div>
+
+			<div class="column">
+    				<h2> Honors Grading Calculator </h2>
+				<br>
+    				<form name="form2">
+					<p> Essential Concept 1 </p>
+					Grade: <input type="number" name="grade0">
+					Star? <input type="checkbox" name="star0">
+					<br>
+					<p> Essential Concept 2 </p>
+					Grade: <input type="number" name="grade1">
+					Star? <input type="checkbox" name="star1"> 
+					<br>
+					<p> Essential Concept 3 </p>
+					Grade: <input type="number" name="grade2">
+					Star? <input type="checkbox" name="star2">
+					<br>
+					<p> Essential Concept 4 </p>
+					Grade: <input type="number" name="grade3">
+					Star? <input type="checkbox" name="star3">
+					<br>
+					<p> Essential Concept 5 </p>
+					Grade: <input type="number" name="grade4">
+					Star? <input type="checkbox" name="star4">
+					<br>
+					<p> Essential Concept 6 </p>
+					Grade: <input type="number" name="grade5">
+					Star? <input type="checkbox" name="star5">
+					<br>
+					<br>
+					<input type="submit" onclick="checkHonors2(); return false">				</form>
+  			</div>
+			
+  			
+		</div>
+		<div class="row" style="padding-top:0; padding-bottom: 5%; border-bottom: 1px solid black;">
+  			<div class="column" style="width:90%; font-size: 20px;">
+    				<p id="f1" style="text-align:center; font-size: 20px;"> Number of ECs: </p>
+				<p id="f2" style="text-align:center; font-size: 20px;"> Your Grade: </p>
+  			</div>
+  			
+		</div>
+	
+</body>
+
+</html>
